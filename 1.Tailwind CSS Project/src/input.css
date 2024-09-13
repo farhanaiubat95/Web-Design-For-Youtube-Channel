@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header{
+    @apply m-0 p-0 flex justify-center items-center
+}
+
+.btn-slide-input{
+    @apply hidden
+}
+
+.slide{
+    @apply transition duration-[2000] 
+}
+.slide video{
+    @apply h-screen mx-0
+}
