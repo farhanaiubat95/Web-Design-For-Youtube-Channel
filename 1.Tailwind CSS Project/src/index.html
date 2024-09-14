@@ -13,6 +13,22 @@
     <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./output.css">
     <title>NTPC WEB</title>
+
+    <style>
+        .blue-banner-bg {
+            clip-path: circle(0% at 0 50%);
+        }
+
+        .blue-banner-bg .active {
+            clip-path: circle(150% at 0 50%);
+            transition: 2s ease;
+            transition-property: clip-path;
+        }
+
+        .slide-navigation .nav-btn:not(:last-child) {
+            margin-right: 20px;
+        }
+    </style>
 </head>
 
 <body class=" bg-slate-50">
@@ -21,12 +37,13 @@
         <!-- Navbar -->
     </header>
 
-    <section class="banner h-full">
-        <div class="relative">
-            <video class="z-0" src="./videos/v1.mp4" autoplay muted loop></video>
-
-            <div class="content absolute top-0 left-0 h-full w-full flex items-center justify-center bg-black/25">
-                <div class=" text-white w-[74%]  ml-[50px] pr-20">
+    <section class="banner h-full relative">
+        <div class="relative slide">
+            <video class="" src="./videos/v1.mp4" autoplay muted loop></video>
+            <div class="blue-banner-bg">
+            </div>
+            <div class="content">
+                <div class=" text-white w-[74%]  ml-[-16%] pr-20">
                     <h1 class="text-[4em] font-black tracking-[5px] uppercase leading-[75px] mb-10 pr-48">LEADING
                         INDIA'S POWER SECTOR</h1>
                     <p class="text-[18px] mb-[75px]">Energy is indispensable and is one of the essential pillars on
@@ -37,18 +54,82 @@
                         company and targets to become a 130 GW firm with diversified fuel mix and a 600 BU company in
                         terms of generation by 2032.
                     </p>
-
-                    <a class="px-[35px] py-[15px] bg-white text-[#1680AC] text-[1.1em] font-medium rounded-2xl hover:text-white hover:bg-[#1680AC]"
-                        href="#">Read More</a>
+                    <a class="banner-read-btn" href="#">Read More</a>
                 </div>
             </div>
 
         </div>
-        <div><video src="./videos/v2.mp4" autoplay muted loop></video></div>
-        <div><video src="./videos/v3.mp4" autoplay muted loop></video></div>
-        <div><video src="./videos/v4.mp4" autoplay muted loop></video></div>
 
+        <div class="relative slide">
+            <video class="" src="./videos/v2.mp4" autoplay muted loop></video>
+            <div class="blue-banner-bg">
+            </div>
+            <div class="content">
+                <div class=" text-white w-[74%]  ml-[-16%] pr-20">
+                    <h1 class="text-[5em] font-black tracking-[5px] uppercase leading-[75px] mb-10 pr-48">POWERING
+                        ENERGY TRANSITION</h1>
+                    <p class="text-[18px] mb-[75px]">First Energy company to declare its Energy Compact Goals as part of
+                        UN High-level Dialogue on Energy (HLDE), NTPC has been spearheading India's Renewable Energy
+                        ecosystem by strengthening its RE footprint, expanding to new areas like Green Hydrogen, Waste
+                        to Energy, Battery Storage and Nuclear Energy, with an aim to have 50% non-fossil based capacity
+                        by 2032. more than 3 GW of renewable energy under operation and 12 GW under implementation, the
+                        company aims to have 60 GW of RE capacity under its belt by 2032. It has teamed with NITI Aayog
+                        for the Net Energy Zero effort.
+                    </p>
+                    <a class="banner-read-btn" href="#">Read More</a>
+                </div>
+            </div>
+        </div>
 
+        <div class="relative slide">
+            <video class="" src="./videos/v3.mp4" autoplay muted loop></video>
+            <div class="blue-banner-bg">
+            </div>
+            <div class="content">
+                <div class=" text-white w-[74%]  ml-[-16%] pr-20">
+                    <h1 class="text-[4em] font-black tracking-[5px] uppercase leading-[75px] mb-10 pr-48">CONNECTING
+                        WITH COMMUNITIES</h1>
+                    <p class="text-[18px] mb-[75px]">Building sustainable communities not only forms the foundation of
+                        CSR and Sustainability policies for NTPC, it is essential to the company's core business in
+                        terms of generating power and illuminating millions of lives. The company believes in offering
+                        reliable power, related products and services at affordable cost, integrating different energy
+                        sources with innovative and eco-friendly technology and thereby contributing to the society.
+                    </p>
+
+                    <a class="banner-read-btn" href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative slide">
+            <video class="" src="./videos/v4.mp4" autoplay muted loop></video>
+            <div class="blue-banner-bg">
+            </div>
+            <div class="content">
+                <div class=" text-white w-[74%]  ml-[-16%] pr-20">
+                    <h1 class="text-[4em] font-black tracking-[5px] uppercase leading-[75px] mb-10 pr-48">NURTURING
+                        LEADERS OF TOMORROW</h1>
+                    <p class="text-[18px] mb-[75px]">Our people practices aim at achieving excellence in development and
+                        management of Human Resources through continuous process improvement, increasing employee
+                        engagement, focussed learning and development, providing career and growth opportunity and
+                        employee welfare. It is an outcome of NTPC’s “People Before PLF” approach which is the guiding
+                        philosophy behind the entire gamut of HR policies thus building an enabling and engaging
+                        progressive work culture. Today, NTPC is recognised as one of the finest employers and
+                        workplaces in the country.
+                    </p>
+
+                    <a class="banner-read-btn" href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- navigate button -->
+        <div class="slide-navigation">
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
     </section>
 
     <!-- JS part start -->
