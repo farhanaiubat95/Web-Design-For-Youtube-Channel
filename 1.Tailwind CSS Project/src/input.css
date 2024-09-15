@@ -6,26 +6,31 @@
     @apply m-0 p-0 flex justify-center items-center
 }
 
-.btn-slide-input{
-    @apply hidden
-}
-
 .slide video{
     @apply z-0 absolute top-0 left-0 w-full h-screen object-cover
-}
-.blue-banner-bg{
-    @apply absolute top-0 left-0 w-full h-screen flex items-center justify-center bg-[#2696E9]
 }
 
 .content{
     @apply absolute top-0 left-0 w-full h-screen flex items-center justify-center bg-black/25
 }
+.banner-text{
+    @apply text-[4em] font-black tracking-[5px] font-myriad uppercase leading-[75px] mb-10 pr-48
+}
+.banner-p{
+    @apply text-[18px] mb-[75px] font-myriad
+}
 .banner-read-btn{
-    @apply px-[35px] py-[15px] bg-white text-[#1680AC] text-[1.1em] font-medium rounded-2xl transition duration-500 ease-out hover:ease-in hover:text-white hover:bg-[#1680AC]
+    @apply px-[35px] py-[15px] font-myriad bg-white text-[#1680AC] text-[1.1em] font-medium rounded-2xl transition duration-500 ease-out hover:ease-in hover:text-white hover:bg-[#1680AC]
 }
 .slide-navigation{
     @apply z-[888px] absolute top-[500px] left-[46.9%] flex mb-10 justify-center items-center content-center flex-wrap translate-y-[35vh]
 }
 .nav-btn{
     @apply scale-110 bg-white w-3 h-3 rounded cursor-pointer shadow-xl transition duration-100 ease-in
+}
+.nav-content{
+    @apply absolute top-0 left-0 w-full flex items-center justify-between 
+}
+.menu-2-a{
+    @apply ml-4 text-[20px] border-b-2 border-b-white hover:border-b-2 hover:border-b-[#478ac9]
 }
