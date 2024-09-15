@@ -10,43 +10,90 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./output.css">
     <title>NTPC WEB</title>
 
     <style>
-        .blue-banner-bg {
-            clip-path: circle(0% at 0 50%);
-        }
-
-        .blue-banner-bg .active {
-            clip-path: circle(150% at 0 50%);
-            transition: 2s ease;
-            transition-property: clip-path;
-        }
-
         .slide-navigation .nav-btn:not(:last-child) {
             margin-right: 20px;
+        }
+
+        .slide-navigation .nav-btn.active {
+            background: #2696E9;
+        }
+
+        .slide-navigation .nav-btn:hover {
+            transform: scale(1.2);
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            clip-path: circle(0% at 0% 0%);
+        }
+
+        .slide.active {
+            clip-path: circle(150% at 50% 0%);
+            transition: 2s ease;
+            transition-property: clip-path;
         }
     </style>
 </head>
 
-<body class=" bg-slate-50">
+<body class=" bg-[#478ac9]">
 
-    <header>
+    <header
+        class="w-full max-h-[100px] bg-Secondary scale-105 md:bg-black/25 shadow-md md:shadow-xl shadow-3rd fixed top-0 left-0 z-50 ">
         <!-- Navbar -->
+        <div class="nav-bar relative px-10 ">
+            <img class="hidden" src="image/gold-navv.png" alt="">
+            <div class="nav-content ">
+                <div class="nav-text px-32 w-full text-white font-myriad flex justify-between items-center h-24">
+                    <div class="nav-logo w-[20%]"><a href="#home"><img src="image/logo.png" alt=""></a></div>
+                    <div class="menu-bar h-24 flex flex-col justify-end w-[80%] mr-0">
+                        <div class="menu-1 flex justify-end mb-5">
+                            <div><a href="#">Skip to Main Content</a></div>
+                            <div><a href="#">Screen Reader Access</a></div>
+                            <div>
+                                <a href="#">A-</a>
+                                <a href="#">A</a>
+                                <a href="#">A+</a>
+                            </div>
+                            <div>
+                                <div class="menu-btn active"></div>
+                                <div class="menu-btn"></div>
+                            </div>
+                            <div><a href="#">Hindi</a></div>
+                            <div><a href="#"><i class='bx bx-search-alt-2'></i></a></div>
+                        </div>
+                        <div class="menu-2 flex justify-end">
+                            <div class="menu-2-a"><a href="#home">Home</a></div>
+                            <div class="menu-2-a"><a href="#home">About Us</a></div>
+                            <div class="menu-2-a"><a href="#home">Sustainability</a></div>
+                            <div class="menu-2-a"><a href="#home">Investors</a></div>
+                            <div class="menu-2-a"><a href="#home">Media</a></div>
+                            <div class="menu-2-a"><a href="#home">Join Us</a></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
     </header>
 
     <section class="banner h-full relative">
-        <div class="relative slide">
+        <div class="relative slide active">
             <video class="" src="./videos/v1.mp4" autoplay muted loop></video>
-            <div class="blue-banner-bg">
-            </div>
             <div class="content">
                 <div class=" text-white w-[74%]  ml-[-16%] pr-20">
-                    <h1 class="text-[4em] font-black tracking-[5px] uppercase leading-[75px] mb-10 pr-48">LEADING
+                    <h1 class="banner-text">
+                        LEADING
                         INDIA'S POWER SECTOR</h1>
-                    <p class="text-[18px] mb-[75px]">Energy is indispensable and is one of the essential pillars on
+                    <p class="banner-p">Energy is indispensable and is one of the essential
+                        pillars on
                         which our
                         economy thrives. NTPC is committed to provide uninterrupted and affordable power to fulfill this
                         requirement, thereby bringing cheers to the farthest reaches of the country. Today, with an
@@ -57,18 +104,16 @@
                     <a class="banner-read-btn" href="#">Read More</a>
                 </div>
             </div>
-
         </div>
 
         <div class="relative slide">
             <video class="" src="./videos/v2.mp4" autoplay muted loop></video>
-            <div class="blue-banner-bg">
-            </div>
+
             <div class="content">
                 <div class=" text-white w-[74%]  ml-[-16%] pr-20">
-                    <h1 class="text-[5em] font-black tracking-[5px] uppercase leading-[75px] mb-10 pr-48">POWERING
+                    <h1 class="banner-text">POWERING
                         ENERGY TRANSITION</h1>
-                    <p class="text-[18px] mb-[75px]">First Energy company to declare its Energy Compact Goals as part of
+                    <p class="banner-p">First Energy company to declare its Energy Compact Goals as part of
                         UN High-level Dialogue on Energy (HLDE), NTPC has been spearheading India's Renewable Energy
                         ecosystem by strengthening its RE footprint, expanding to new areas like Green Hydrogen, Waste
                         to Energy, Battery Storage and Nuclear Energy, with an aim to have 50% non-fossil based capacity
@@ -83,13 +128,11 @@
 
         <div class="relative slide">
             <video class="" src="./videos/v3.mp4" autoplay muted loop></video>
-            <div class="blue-banner-bg">
-            </div>
             <div class="content">
                 <div class=" text-white w-[74%]  ml-[-16%] pr-20">
-                    <h1 class="text-[4em] font-black tracking-[5px] uppercase leading-[75px] mb-10 pr-48">CONNECTING
+                    <h1 class="banner-text">CONNECTING
                         WITH COMMUNITIES</h1>
-                    <p class="text-[18px] mb-[75px]">Building sustainable communities not only forms the foundation of
+                    <p class="banner-p">Building sustainable communities not only forms the foundation of
                         CSR and Sustainability policies for NTPC, it is essential to the company's core business in
                         terms of generating power and illuminating millions of lives. The company believes in offering
                         reliable power, related products and services at affordable cost, integrating different energy
@@ -103,13 +146,11 @@
 
         <div class="relative slide">
             <video class="" src="./videos/v4.mp4" autoplay muted loop></video>
-            <div class="blue-banner-bg">
-            </div>
             <div class="content">
                 <div class=" text-white w-[74%]  ml-[-16%] pr-20">
-                    <h1 class="text-[4em] font-black tracking-[5px] uppercase leading-[75px] mb-10 pr-48">NURTURING
+                    <h1 class="banner-text">NURTURING
                         LEADERS OF TOMORROW</h1>
-                    <p class="text-[18px] mb-[75px]">Our people practices aim at achieving excellence in development and
+                    <p class="banner-p">Our people practices aim at achieving excellence in development and
                         management of Human Resources through continuous process improvement, increasing employee
                         engagement, focussed learning and development, providing career and growth opportunity and
                         employee welfare. It is an outcome of NTPC’s “People Before PLF” approach which is the guiding
@@ -122,10 +163,11 @@
                 </div>
             </div>
         </div>
+        <div class="blue-banner-bg active"></div>
 
         <!-- navigate button -->
         <div class="slide-navigation">
-            <div class="nav-btn"></div>
+            <div class="nav-btn active"></div>
             <div class="nav-btn"></div>
             <div class="nav-btn"></div>
             <div class="nav-btn"></div>
@@ -138,6 +180,36 @@
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./script.js"></script>
+    <script>
+
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".slide");
+        const bg = document.querySelectorAll(".blue-banner-bg");
+
+        var sliderNav = function (manual) {
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+
+            bg.forEach((bgCol) => {
+                bgCol.classList.remove("active");
+            });
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            bg[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i)
+            });
+        });
+    </script>
 </body>
 
 </html>
