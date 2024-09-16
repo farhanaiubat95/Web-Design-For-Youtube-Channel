@@ -11,64 +11,41 @@
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/logo1.png" type="image/x-icon">
     <link rel="stylesheet" href="./output.css">
-    <title>NTPC WEB</title>
-
-    <style>
-        .slide-navigation .nav-btn:not(:last-child) {
-            margin-right: 20px;
-        }
-
-        .slide-navigation .nav-btn.active {
-            background: #2696E9;
-        }
-
-        .slide-navigation .nav-btn:hover {
-            transform: scale(1.2);
-        }
-
-        .slide {
-            position: absolute;
-            width: 100%;
-            clip-path: circle(0% at 0% 0%);
-        }
-
-        .slide.active {
-            clip-path: circle(150% at 50% 0%);
-            transition: 2s ease;
-            transition-property: clip-path;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>BIFPCL || HOME </title>
 </head>
 
-<body class=" bg-[#478ac9]">
+<body class="body bg-[#478ac9]">
 
-    <header
-        class="w-full max-h-[100px] bg-Secondary scale-105 md:bg-black/25 shadow-md md:shadow-xl shadow-3rd fixed top-0 left-0 z-50 ">
+    <!-- Header nav start-->
+    <header>
         <!-- Navbar -->
         <div class="nav-bar relative px-10 ">
-            <img class="hidden" src="image/gold-navv.png" alt="">
+            <img id="nav-gold" class="h-28 hidden" src="image/gold-navv.png" alt="">
             <div class="nav-content ">
-                <div class="nav-text px-32 w-full text-white font-myriad flex justify-between items-center h-24">
-                    <div class="nav-logo w-[20%]"><a href="#home"><img src="image/logo.png" alt=""></a></div>
+                <div class="nav-text px-44 w-full text-white font-myriad flex justify-between items-center h-24">
+                    <div class="nav-logo py-5 w-[100px]"><a href="#home"><img src="image/logo1.png" alt=""></a></div>
                     <div class="menu-bar h-24 flex flex-col justify-end w-[80%] mr-0">
-                        <div class="menu-1 flex justify-end mb-5">
-                            <div><a href="#">Skip to Main Content</a></div>
-                            <div><a href="#">Screen Reader Access</a></div>
-                            <div>
+                        <div class="menu-1 flex justify-end">
+                            <div class="menu-1-a border-r-[1px] h-[20px] px-2 border-r-white"><a href="#">Skip to Main
+                                    Content</a></div>
+                            <div class="menu-1-a "><a href="#">Screen Reader Access</a></div>
+                            <div class="menu-1-a menu-1-border">
                                 <a href="#">A-</a>
                                 <a href="#">A</a>
                                 <a href="#">A+</a>
                             </div>
-                            <div>
-                                <div class="menu-btn active"></div>
-                                <div class="menu-btn"></div>
+                            <div class="menu-1-a flex gap-1">
+                                <div class="menu-btn active"><a href="#"><input type="radio"></a></div>
+                                <div class="menu-btn"><a href="#"><input type="radio"></a></div>
                             </div>
-                            <div><a href="#">Hindi</a></div>
-                            <div><a href="#"><i class='bx bx-search-alt-2'></i></a></div>
+                            <div class="menu-1-a menu-1-border"><a href="#">Hindi</a></div>
+                            <div class="menu-1-a"><a href="#"><i class='bx bx-search-alt-2'></i></a></div>
                         </div>
-                        <div class="menu-2 flex justify-end">
+                        <div class="menu-2 flex justify-end mt-5">
                             <div class="menu-2-a"><a href="#home">Home</a></div>
                             <div class="menu-2-a"><a href="#home">About Us</a></div>
                             <div class="menu-2-a"><a href="#home">Sustainability</a></div>
@@ -83,12 +60,14 @@
         </div>
         </div>
     </header>
+    <!-- Header nav end-->
 
+    <!-- Banner part start-->
     <section class="banner h-full relative">
         <div class="relative slide active">
             <video class="" src="./videos/v1.mp4" autoplay muted loop></video>
             <div class="content">
-                <div class=" text-white w-[74%]  ml-[-16%] pr-20">
+                <div class="content-text">
                     <h1 class="banner-text">
                         LEADING
                         INDIA'S POWER SECTOR</h1>
@@ -110,7 +89,7 @@
             <video class="" src="./videos/v2.mp4" autoplay muted loop></video>
 
             <div class="content">
-                <div class=" text-white w-[74%]  ml-[-16%] pr-20">
+                <div class="content-text">
                     <h1 class="banner-text">POWERING
                         ENERGY TRANSITION</h1>
                     <p class="banner-p">First Energy company to declare its Energy Compact Goals as part of
@@ -129,7 +108,7 @@
         <div class="relative slide">
             <video class="" src="./videos/v3.mp4" autoplay muted loop></video>
             <div class="content">
-                <div class=" text-white w-[74%]  ml-[-16%] pr-20">
+                <div class="content-text">
                     <h1 class="banner-text">CONNECTING
                         WITH COMMUNITIES</h1>
                     <p class="banner-p">Building sustainable communities not only forms the foundation of
@@ -147,7 +126,7 @@
         <div class="relative slide">
             <video class="" src="./videos/v4.mp4" autoplay muted loop></video>
             <div class="content">
-                <div class=" text-white w-[74%]  ml-[-16%] pr-20">
+                <div class="content-text">
                     <h1 class="banner-text">NURTURING
                         LEADERS OF TOMORROW</h1>
                     <p class="banner-p">Our people practices aim at achieving excellence in development and
@@ -173,43 +152,150 @@
             <div class="nav-btn"></div>
         </div>
     </section>
+    <!-- Banner part end-->
+
+    <!-- AboutOrg Part Start -->
+    <section class="aboutOrg pt-[100vh] h-full w-full">
+        <div class="aboutOrg-body h-full w-full relative">
+            <div class="aboutorg-banner "><img class="w-full h-[100vh]" src="image/energy-light.jpg" alt=""></div>
+            <div class="aboutOrg-overlay">
+                <div class="about-content flex flex-col">
+                    <div class="about-text w-[70%] pl-20 pr-24 mb-5 text-white font-myriad">
+                        <h1 class="text-[4em] font-bold">Driving Sustainable Growth</h1>
+                        <p class="text-justify">NTPC's sustainable business practices are an integral part of its vision
+                            for providing
+                            impetus to
+                            India's growth. The company is committed to increasing its market share in energy production
+                            while adhering to the triple bottom line framework of social inclusiveness, environment
+                            protection, and economic growth.</p>
+                    </div>
+
+                    <div class="about-count-container ">
+                        <div class="count-part text-center">
+                            <h1 class="count-h">76,294 MW</h1>
+                            <h5 class="count-p">Installed Capacity</h5>
+                        </div>
+
+                        <div class="count-part text-center">
+                            <h1 class="count-h">~25%</h1>
+                            <h5 class="count-p">Share in All India Generation</h5>
+                        </div>
+
+                        <div class="count-part text-center">
+                            <h1 class="count-h">353 Cr.</h1>
+                            <h5 class="count-p">of Community Investment</h5>
+                        </div>
+
+                        <div class="count-part text-center">
+                            <h1 class="count-h">17,794</h1>
+                            <h5 class="count-p">Employees</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- AboutOrg Part end -->
+
+    <section class="h-full">
+        <div class="powerSection h-full flex">
+            <div class="power-image grow w-[20%] relative">
+                <img class="h-[100vh]" src="image/power-img-1.jpg" alt="">
+                <div class="power-content absolute top-0 left-0">
+                    <h1>Coal Stations</h1>
+                    <a href="#">know more</a>
+                </div>
+
+            </div>
+            <div class="power-image grow w-[20%] relative"><img class="h-[100vh]" src="image/power-img-2.jpg" alt="">
+            </div>
+            <div class="power-image grow w-[20%] relative"><img class="h-[100vh]" src="image/power-img-3.jpg" alt="">
+            </div>
+            <div class="power-image grow w-[20%] relative"><img class="h-[100vh]" src="image/power-img-4.avif" alt="">
+            </div>
+            <div class="power-image grow w-[20%] relative"><img class="h-[100vh]" src="image/power-img-5.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="footer-bg-image py-2">
+            <div class="footer-overlay m-2">
+                <!-- Footer inner part-1 start -->
+                <div class="footer-1 w-full  my-5">
+                    <div class="footer-1-inner flex justify-between items-center py-2 aos-init aos-animate"
+                        data-aos="fade-right" data-aos-delay="500">
+                        <div class="f-logo-1 flex gap-7 pl-10 w-[40%]">
+                            <div class="f-img  h-50 flex justify-center items-center"><img class="w-20 h-20"
+                                    src="image/logo1.png" alt="">
+                            </div>
+                            <div class="f-text flex flex-col gap-2 text-white font-myriad">
+                                <h1 class="text-[35px] font-lg">BIFPCL LImited</h1>
+                                <p class="text-[17px]"> BIFPCL Bhavan, 117 Kazi Nazrul Islam Ave, Dhaka 1000</p>
+                            </div>
+                        </div>
+                        <div class="f-icon-2 flex gap-3 w-[40%] justify-center items-center pr-14">
+                            <a class="f-icon-a hover:border-[#00aced]  hover:bg-[#00aced]" href="#"><i
+                                    class='bx bxl-twitter f-icon-i'></i></a>
+                            <a class="f-icon-a hover:border-[#3a559f]  hover:bg-[#3a559f]" href="#"><i
+                                    class='bx bxl-facebook-circle f-icon-i'></i></a>
+                            <a class="f-icon-a hover:border-[#007ab9]  hover:bg-[#007ab9]" href="#"><i
+                                    class='bx bxl-linkedin-square f-icon-i'></i></a>
+                            <a class="f-icon-a hover:border-[#f61c0d]  hover:bg-[#f61c0d]" href="#"><i
+                                    class='bx bxl-youtube f-icon-i'></i></a>
+                            <a class="f-icon-a instagram-icon" href="#"><i class='bx bxl-instagram f-icon-i'></i></a>
+                            <a class="f-icon-a hover:border-[#194f06]  hover:bg-[#194f06]" href="#"><i
+                                    class='bx bxl-whatsapp f-icon-i'></i></a>
+
+                        </div>
+                        <div class="f-img-3 w-[20%] flex justify-end pr-10"><img class="w-20 h-20" src="image/bd.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer inner part-1 end -->
+
+                <!-- Footer inner part-2 start -->
+                <div class="footer-2 w-full ">
+                    <div class="footer-2-inner flex flex-col py-5 border-t-2 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-delay="500">
+                        <div class="footer2-part-1 flex text-white font-myriad">
+                            <div class="footer-2-a "><a href="#">MoU</a></div>
+                            <div class="footer-2-a menu-1-border"><a href="#">Vivad se Vishwas II</a></div>
+                            <div class="footer-2-a"><a href="#">RTI</a></div>
+                            <div class="footer-2-a menu-1-border"><a href="#">Notices</a></div>
+                            <div class="footer-2-a"><a href="#">Tenders</a></div>
+                            <div class="footer-2-a menu-1-border"><a href="#">Vigilance help line</a></div>
+                            <div class="footer-2-a"><a href="#">MSME Cell</a></div>
+                            <div class="footer-2-a menu-1-border"><a href="#">Grievance</a></div>
+                            <div class="footer-2-a"><a href="#">Contact Us</a></div>
+                        </div>
+
+                        <div class="footer2-part-2 flex text-white font-myriad my-2">
+                            <div class="footer-2-a "><a href="#">Privacy Policy</a></div>
+                            <div class="footer-2-a menu-1-border"><a href="#">Disclaimer</a></div>
+                            <div class="footer-2-a"><a href="#">5 years Procurement Projection Plan</a></div>
+                            <div class="footer-2-a menu-1-border"><a href="#">Site map</a></div>
+                            <div class="footer-2-a"><a href="#">Employee and Ex Employee Section</a></div>
+                        </div>
+                        <div class="footer2-part-3 flex flex-col text-white pl-3 font-myriad">
+                            <h3>Copyright © 2024 BIFPCL. All Rights Reserved.</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer inner part-2 end -->
+            </div>
+        </div>
+    </footer>
 
     <!-- JS part start -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
-    <script>
-
-        const btns = document.querySelectorAll(".nav-btn");
-        const slides = document.querySelectorAll(".slide");
-        const bg = document.querySelectorAll(".blue-banner-bg");
-
-        var sliderNav = function (manual) {
-            btns.forEach((btn) => {
-                btn.classList.remove("active");
-            });
-
-            slides.forEach((slide) => {
-                slide.classList.remove("active");
-            });
-
-            bg.forEach((bgCol) => {
-                bgCol.classList.remove("active");
-            });
-
-            btns[manual].classList.add("active");
-            slides[manual].classList.add("active");
-            bg[manual].classList.add("active");
-        }
-
-        btns.forEach((btn, i) => {
-            btn.addEventListener("click", () => {
-                sliderNav(i)
-            });
-        });
-    </script>
 </body>
 
 </html>
