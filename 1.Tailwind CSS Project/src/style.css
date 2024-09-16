@@ -1,0 +1,28 @@
+.slide-navigation .nav-btn:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        .slide-navigation .nav-btn.active {
+            background: #2696E9;
+        }
+
+        .slide-navigation .nav-btn:hover {
+            transform: scale(1.2);
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            clip-path: circle(0% at 0% 0%);
+        }
+
+        .slide.active {
+            clip-path: circle(150% at 50% 0%);
+            transition: 2s ease;
+            transition-property: clip-path;
+        }
+
+        .instagram-icon:hover {
+            border: 2px solid #f09433;
+            background: linear-gradient(to right top, #f09433, #ef7c32, #eb6336, #e5483c, #dc2743);
+        }
