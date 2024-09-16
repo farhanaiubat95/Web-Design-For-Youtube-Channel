@@ -52,6 +52,13 @@ header{
 .about-count-container{
     @apply w-full bg-[#DEE5D4] pt-5 px-28 flex justify-between items-center
 }
+.power-image:hover .power-content{
+    @apply bg-black/50 transition duration-300 ease-in
+}
+
+.power-image:hover .power-content-text{
+    @apply bg-blue-400/75  rounded-[50px] px-10 transition duration-300 ease-in z-10
+}
 .footer-bg-image{
     background:url(./image/footer-img.jpg);
     background-position: center;
