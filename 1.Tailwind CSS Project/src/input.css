@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.header{
-    @apply m-0 p-0 flex justify-center items-center
+header{
+    @apply w-full max-h-[100px] scale-105 md:bg-black/25 shadow-md md:shadow-xl fixed top-0 left-0 z-50 
 }
+
 
 .slide video{
     @apply z-0 absolute top-0 left-0 w-full h-screen object-cover
@@ -12,6 +13,9 @@
 
 .content{
     @apply absolute top-0 left-0 w-full h-screen flex items-center justify-center bg-black/25
+}
+.content-text{
+    @apply text-white w-[70%]  ml-[-16%] pr-52
 }
 .banner-text{
     @apply text-[4em] font-black tracking-[5px] font-myriad uppercase leading-[75px] mb-10 pr-48
@@ -29,8 +33,44 @@
     @apply scale-110 bg-white w-3 h-3 rounded cursor-pointer shadow-xl transition duration-100 ease-in
 }
 .nav-content{
-    @apply absolute top-0 left-0 w-full flex items-center justify-between 
+    @apply absolute top-0 left-0 py-3 w-full flex items-center justify-between 
+}
+.menu-1-a{
+    @apply text-[1.02em] font-myriad text-white hover:text-[#007DC5] ml-3 transition duration-500 ease-out hover:ease-in
 }
 .menu-2-a{
-    @apply ml-4 text-[20px] border-b-2 border-b-white hover:border-b-2 hover:border-b-[#478ac9]
+    @apply ml-4 font-myriad text-[1.4em] font-medium border-b-[3px] border-b-transparent transition duration-300 ease-out hover:ease-in hover:border-b-[#007DC5]
+}
+.menu-1-border{
+    @apply border-x-[1px]  px-2 border-x-white h-[20px] 
+}
+
+.aboutOrg-overlay{
+    @apply bg-black/50 h-full absolute top-0 left-0 flex justify-center items-center
+}
+
+.about-count-container{
+    @apply w-full bg-[#DEE5D4] pt-5 px-28 flex justify-between items-center
+}
+.footer-bg-image{
+    background:url(./image/footer-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.footer-overlay{
+    @apply px-20 py-3
+}
+
+.f-icon-a{
+    @apply text-[30px]  p-2 leading-3 text-white rounded-[50%] border-2 border-white 
+}
+.footer-2-a{
+    @apply text-[1.02em] font-myriad text-white hover:text-[#f18c33] ml-3 transition duration-300 ease-out hover:ease-in
+}
+.count-h{
+    @apply text-[#007DC5] font-bold text-[3.75rem]
+}
+.count-p{
+    @apply text-[#007DC5] my-5 pb-4
 }
