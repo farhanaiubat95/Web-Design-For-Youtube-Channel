@@ -5,12 +5,9 @@
 header{
     @apply w-full max-h-[100px] scale-105 md:bg-black/25 shadow-md md:shadow-xl fixed top-0 left-0 z-50 
 }
-
-
 .slide video{
     @apply z-0 absolute top-0 left-0 w-full h-screen object-cover
 }
-
 .content{
     @apply absolute top-0 left-0 w-full h-screen flex items-center justify-center bg-black/25
 }
@@ -44,20 +41,29 @@ header{
 .menu-1-border{
     @apply border-x-[1px]  px-2 border-x-white h-[20px] 
 }
-
 .aboutOrg-overlay{
     @apply bg-black/50 h-full absolute top-0 left-0 flex justify-center items-center
 }
-
 .about-count-container{
     @apply w-full bg-[#DEE5D4] pt-5 px-28 flex justify-between items-center
 }
 .power-image:hover .power-content{
     @apply bg-black/50 transition duration-300 ease-in
 }
-
 .power-image:hover .power-content-text{
     @apply bg-blue-400/75  rounded-[50px] px-10 transition duration-300 ease-in z-10
+}
+.main-text{
+    @apply absolute top-0 left-0 z-[3] w-full h-64 flex justify-center items-center
+}
+.main-text-h1{
+    @apply text-white font-myriad font-bold text-[40px] text-center
+}
+.count-h{
+    @apply text-[#007DC5] font-bold text-[3.75rem]
+}
+.count-p{
+    @apply text-[#007DC5] my-5 pb-4
 }
 .footer-bg-image{
     background:url(./image/footer-img.jpg);
@@ -68,16 +74,9 @@ header{
 .footer-overlay{
     @apply px-20 py-3
 }
-
 .f-icon-a{
     @apply text-[30px]  p-2 leading-3 text-white rounded-[50%] border-2 border-white 
 }
 .footer-2-a{
     @apply text-[1.02em] font-myriad text-white hover:text-[#f18c33] ml-3 transition duration-300 ease-out hover:ease-in
-}
-.count-h{
-    @apply text-[#007DC5] font-bold text-[3.75rem]
-}
-.count-p{
-    @apply text-[#007DC5] my-5 pb-4
 }
